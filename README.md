@@ -12,7 +12,7 @@ Installation
 
 Usage
 ========
-1. Run you gstreamer application and redirect logs into syslog:
+1. Run you gstreamer application and redirect logs into syslog (please notice 10 sec timeout in this command):
 ```
 GST_DEBUG=*:2,filesink:5,ringbuffer:2,videotestsrc:5,videoconvert:5,queue:5,theoraenc:5,oggmux:5 timeout 10s gst-launch-1.0 videotestsrc ! queue ! videoconvert ! theoraenc ! queue ! oggmux name=mux autoaudiosrc ! queue ! audioconvert ! vorbisenc ! queue ! mux. mux. !  queue ! filesink location=test.ogg 2> >(logger -t gst-launch)
 
