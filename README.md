@@ -27,4 +27,4 @@ grep gst-launch /var/log/syslog > /tmp/syslog
 
 Example logs highlighting
 =========
-![highlighter(https://raw.githubusercontent.com/xmementoit/gstreamerLogsHighlighter/master/gstreamerVimHighlight.png)
+![highlighter](https://raw.githubusercontent.com/xmementoit/gstreamerLogsHighlighter/master/gstreamerVimHighlight.png)
