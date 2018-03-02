@@ -8,7 +8,9 @@ Installation
 ========
    1. Place gstreamer_highlight_syntax.vim file to your $HOME/.vim/syntax directory
    2. Put following line somewhere into your $HOME/.vimrc file: 
+   ```
       au BufNewfile,BufRead syslog*.log set filetype=gstreamer_highlight_syntax
+   ```
 
 Usage
 ========
